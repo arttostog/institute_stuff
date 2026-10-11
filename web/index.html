@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Учебная страница</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Знакомство с HTML</h1>
+            <h2>Первый раздел</h2>
+            <p style="color: red;">Здесь находится первый абзац</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#main-body">Основной контент</a></li>
+                <ul>
+                    <li><a href="#garage">Купить гараж</a></li>
+                    <li><a href="#photo">Фото</a></li>
+                    <li><a href="#table">Таблица</a></li>
+                </ul>
+            </ul>
+        </nav>
+        <main>
+            <section id="main-body">
+                <section id="garage">
+                    <a href="https://www.avito.ru/syktyvkar/garazhi_i_mashinomesta/prodam/garazh-ASgBAgICAkSYA~QQqAjsVQ" target="_blank">Купить гараж</a>
+                </section>
+                <br>
+                <a onclick="alert('Да')" target="_blank">Да</a>
+                <br>
+                <section id="photo">
+                    <img src="https://storage.yandexcloud.net/pianokafe-image-storage/iblock/c18/MV5BOTIxNTgzZmMtM2Q4Zi00YThlLWJiNjItNWIxYzk3YjliNDdlXkEyXkFqcGc_._V1_.jpg" alt="da" width="200">
+                    <br>
+                    <img src="assets/images/photo.jpg" alt="Портрет НЕ Анны" width="200">
+                </section>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <section id="table">
+                    <table border="1" cellpadding="5" cellspacing="0">
+                    <caption>Расписание встреч клуба</caption>
+                    <tr>
+                        <th scope="col">День</th>
+                        <th scope="col">Занятия</th>
+                        <th scope="col">Итоги</th>
+                    </tr>
+                    <tr>
+                        <td>Суббота</td>
+                        <td>Прогулка по городу</td>
+                        <td rowspan="3">Не Отмена</td>
+                    </tr>
+                    <tr>
+                        <td>Воскресение</td>
+                        <td>Обсуждение фотографий</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Отмена</td>
+                    </tr>
+                </table>
+                </section>
+            </section>
+        </main>
+        <footer>
+            Yeet
+        </footer>
+        <script src="./assets/js/script.js" defer></script>
+    </body>
+</html>

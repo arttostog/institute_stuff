@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/survey.css">
+    <title>Анкета</title>
+</head>
+<body>
+    <header>
+        <section class="header">
+             <video src="./assets/videos/video.mp4" muted autoplay></video>
+            <h2>Толстогузов Артём Дмитриевич</h2>
+            <h3>Гений, миллиардер, филантроп</h3>
+        </section>
+    </header>
+    <main>
+        <section id="contact-form" class="contact-form">
+            <h2>Форма для обратной связи</h2>
+            <form id="visitor-form">
+                <p>
+                    <label for="visitor-name">Ваше ФИО</label>
+                    <input id="visitor-name" name="name" type="text" required />
+                </p>
+                <p>
+                    <label for="visitor-age">Ваш возраст</label>
+                    <input id="visitor-age" name="age" type="number" step="0.01" required />
+                </p>
+				<p>
+                    <label for="visitor-gender">Ваш пол</label>
+                    <select id="visitor-gender" name="gender">
+						<option value="not-stated">Не указан</option>
+						<option value="male">Мужской</option>
+						<option value="female">Женский</option>
+					</select>
+                </p>
+				<p>
+					<fieldset>
+						<legend>Интересы</legend>
+						<label><input type="checkbox" name="interest" value="Спать" />Спать</label>
+						<label><input type="checkbox" name="interest" value="Есть" />Есть</label>
+					</fieldset>
+				</p>
+				<p>
+                    <label for="visitor-interest-yourself">Ваши интересы</label>
+                    <input id="visitor-interest-yourself" name="interest-yourself" type="text" />
+                </p>
+				<p>
+                    <label for="visitor-commentary">Комментарий</label>
+                    <textarea id="visitor-commentary" name="commentary" type="text" maxlength="200"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Отправить</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <p>&copy; 2026 Толстогузов Артём Дмитриевич. Все права не защищены, но отбиваться попробуют.</p>
+        </section>
+    </footer>
+    <script src="assets/js/survey.js" defer></script>
+</body>
+</html>
